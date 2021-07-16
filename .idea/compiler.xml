@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spa-react.all" />
+        <module name="spa-react.ui.apps" />
+        <module name="spa-react.ui.content" />
+        <module name="spa-react.core" />
+        <module name="spa-react.ui.config" />
+        <module name="spa-react.ui.apps.structure" />
+        <module name="spa-react.ui.tests" />
+        <module name="spa-react.it.tests" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spa-react" target="1.8" />
+      <module name="spa-react.all" target="1.8" />
+      <module name="spa-react.core" target="1.8" />
+      <module name="spa-react.dispatcher.cloud" target="1.8" />
+      <module name="spa-react.it.tests" target="1.8" />
+      <module name="spa-react.ui.apps" target="1.8" />
+      <module name="spa-react.ui.apps.structure" target="1.8" />
+      <module name="spa-react.ui.config" target="1.8" />
+      <module name="spa-react.ui.content" target="1.8" />
+      <module name="spa-react.ui.frontend" target="1.8" />
+      <module name="spa-react.ui.tests" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

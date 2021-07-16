@@ -1,0 +1,12 @@
+{
+  "id":"com.spa.react:spa-react.all:slingosgifeature:author:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~spa-react":    {
+      "mobile.resourceTypes":[
+        "spa-react/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators.",
+      ":configurator:content-package-origins":"com.spa.react:spa-react.all:1.0.0-SNAPSHOT|com.spa.react:spa-react.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}

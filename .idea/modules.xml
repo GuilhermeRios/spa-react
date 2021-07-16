@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spa-react.iml" filepath="$PROJECT_DIR$/spa-react.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all/spa-react.all.iml" filepath="$PROJECT_DIR$/all/spa-react.all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/spa-react.core.iml" filepath="$PROJECT_DIR$/core/spa-react.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dispatcher/spa-react.dispatcher.cloud.iml" filepath="$PROJECT_DIR$/dispatcher/spa-react.dispatcher.cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/it.tests/spa-react.it.tests.iml" filepath="$PROJECT_DIR$/it.tests/spa-react.it.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps/spa-react.ui.apps.iml" filepath="$PROJECT_DIR$/ui.apps/spa-react.ui.apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.apps.structure/spa-react.ui.apps.structure.iml" filepath="$PROJECT_DIR$/ui.apps.structure/spa-react.ui.apps.structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.config/spa-react.ui.config.iml" filepath="$PROJECT_DIR$/ui.config/spa-react.ui.config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.content/spa-react.ui.content.iml" filepath="$PROJECT_DIR$/ui.content/spa-react.ui.content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.frontend/spa-react.ui.frontend.iml" filepath="$PROJECT_DIR$/ui.frontend/spa-react.ui.frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui.tests/spa-react.ui.tests.iml" filepath="$PROJECT_DIR$/ui.tests/spa-react.ui.tests.iml" />
+    </modules>
+  </component>
+</project>

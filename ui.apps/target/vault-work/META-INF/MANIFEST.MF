@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: SPA React - UI apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: application
+Content-Package-Id: com.spa.react:spa-react.ui.apps:1.0.0-SNAPSHOT
+Content-Package-Description: UI apps package for SPA React
+Content-Package-Roots: /apps/spa-react/clientlibs,/apps/spa-react/compon
+ ents,/apps/spa-react/i18n
+Import-Package: com.adobe.aem.spa.project.core.models;version="[1.1.0,2.
+ 0.0)",com.adobe.cq.wcm.core.components.models;version="[12.21.0,13.0.0)
+ ",com.spa.react.core.models;version="[1.0.0,2.0.0)",org.apache.sling.sc
+ ripting.sightly;version="[2.0.0,3.0.0)"
+

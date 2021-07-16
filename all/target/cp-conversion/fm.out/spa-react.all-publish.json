@@ -1,0 +1,12 @@
+{
+  "id":"com.spa.react:spa-react.all:slingosgifeature:publish:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/spa-react/</",
+        "/:/"
+      ],
+      ":configurator:content-package-origins":"com.spa.react:spa-react.all:1.0.0-SNAPSHOT|com.spa.react:spa-react.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}

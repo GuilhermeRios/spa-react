@@ -1,0 +1,7 @@
+#File edited by the Apache Sling Content Package to Sling Feature converter
+#Thu Jul 15 13:11:25 BRT 2021
+prod=spa-react.all-prod.json
+stage=spa-react.all-stage.json
+author=spa-react.all-author.json
+publish=spa-react.all-publish.json
+(default)=spa-react.all.json
