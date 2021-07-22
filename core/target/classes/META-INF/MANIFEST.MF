@@ -13,16 +13,20 @@ Export-Package: com.spa.react.core.filters;version="1.0";uses:="javax.
  eact.core.schedulers;version="1.0",com.spa.react.core.servlets;versio
  n="1.0";uses:="javax.servlet,org.apache.sling.api,org.apache.sling.ap
  i.servlets"
-Import-Package: javax.annotation;version="0.0.0",com.day.cq.wcm.api;ve
- rsion="[1.29,2)",com.spa.react.core.filters;version="[1.0,2)",com.spa
- .react.core.listeners;version="[1.0,2)",com.spa.react.core.schedulers
- ;version="[1.0,2)",com.spa.react.core.servlets;version="[1.0,2)",java
- x.servlet;version="[3.1,4)",org.apache.sling.api;version="[2.3,3)",or
- g.apache.sling.api.request;version="[2.4,3)",org.apache.sling.api.res
- ource;version="[2.12,3)",org.apache.sling.api.servlets;version="[2.3,
- 3)",org.apache.sling.models.annotations;version="[1.5,2)",org.apache.
- sling.models.annotations.injectorspecific;version="[1.1,2)",org.osgi.
- service.event;version="[1.4,2)",org.slf4j;version="[1.7,2)"
+Import-Package: javax.annotation;version="0.0.0",com.adobe.cq.export.j
+ son;version="[2.0,3)",com.day.cq.wcm.api;version="[1.29,2)",com.spa.r
+ eact.core.filters;version="[1.0,2)",com.spa.react.core.listeners;vers
+ ion="[1.0,2)",com.spa.react.core.schedulers;version="[1.0,2)",com.spa
+ .react.core.servlets;version="[1.0,2)",javax.inject;version="[1.0,2)"
+ ,javax.servlet;version="[3.1,4)",org.apache.commons.lang3;version="[3
+ .12,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.r
+ equest;version="[2.4,3)",org.apache.sling.api.resource;version="[2.12
+ ,3)",org.apache.sling.api.servlets;version="[2.3,3)",org.apache.sling
+ .models.annotations;version="[1.5,2)",org.apache.sling.models.annotat
+ ions.injectorspecific;version="[1.1,2)",org.osgi.service.event;versio
+ n="[1.4,2)",org.slf4j;version="[1.7,2)"
+Private-Package: com.spa.react.core.beans,com.spa.react.core.models.im
+ pl
 Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
  unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
  ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
@@ -36,5 +40,6 @@ Service-Component: OSGI-INF/com.spa.react.core.filters.LoggingFilter.x
  ml,OSGI-INF/com.spa.react.core.listeners.SimpleResourceListener.xml,O
  SGI-INF/com.spa.react.core.schedulers.SimpleScheduledTask.xml,OSGI-IN
  F/com.spa.react.core.servlets.SimpleServlet.xml
-Sling-Model-Classes: com.spa.react.core.models.HelloWorldModel
+Sling-Model-Classes: com.spa.react.core.models.HelloWorldModel,com.spa
+ .react.core.models.impl.FeaturetteImpl
 

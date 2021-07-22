@@ -19,62 +19,36 @@ import './Page/Page';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
 
-import {MapTo} from '@adobe/aem-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 import {
     CarouselV1IsEmptyFn
 } from '@adobe/aem-core-components-react-spa/dist/isEmptyFunctions';
 
 import {
-    TitleV2IsEmptyFn
-} from '@adobe/aem-core-components-react-base/dist/isEmptyFunctions';
-
-import {
     ContainerV1, ContainerV1IsEmptyFn,
     TabsV1, TabsV1IsEmptyFn,
-    AccordionV1,AccordionV1IsEmptyFn,
+    AccordionV1, AccordionV1IsEmptyFn,
 } from '@adobe/aem-core-components-react-spa';
 
-import {
-    BreadCrumbV2,BreadCrumbV2IsEmptyFn,
-    ButtonV1,ButtonV1IsEmptyFn,
-    ImageV2,ImageV2IsEmptyFn,
-    LanguageNavigationV1,
-    NavigationV1,
-    TeaserV1,TeaserV1IsEmptyFn,
-    DownloadV1,DownloadV1IsEmptyFn,
-    SeparatorV1,SeparatorV1IsEmptyFn,
-    ListV2,ListV2IsEmptyFn
-} from '@adobe/aem-core-components-react-base';
+
+import { Featurette, FeaturetteEditConfig } from "./Featurette/Featurette";
+import MarketingCardsContainer from "./MarketingCardsContainer/MarketingCardsContainer";
 
 //lazyload / code splitting example of an internal component
 const LazyTextComponent = withAsyncImport(() => import(`./Text/Text`));
 
 //lazyload / code splitting examples of external components
-const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-base/dist/authoring/title/v2/TitleV2`));
 const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-react-spa/dist/container/carousel/v1/CarouselV1`));
 
+MapTo('spa-react/components/tabs')(TabsV1, { isEmpty: TabsV1IsEmptyFn });
+MapTo('spa-react/components/accordion')(AccordionV1, { isEmpty: AccordionV1IsEmptyFn });
+MapTo('spa-react/components/carousel')(CarouselV1, { isEmpty: CarouselV1IsEmptyFn });
+MapTo('spa-react/components/container')(ContainerV1, { isEmpty: ContainerV1IsEmptyFn });
 
-MapTo('spa-react/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
-MapTo('spa-react/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
-MapTo('spa-react/components/separator')(SeparatorV1, {isEmpty: SeparatorV1IsEmptyFn});
-
-MapTo('spa-react/components/button')(ButtonV1, {isEmpty: ButtonV1IsEmptyFn});
-MapTo('spa-react/components/teaser')(TeaserV1, {isEmpty: TeaserV1IsEmptyFn});
-MapTo('spa-react/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});
-MapTo('spa-react/components/title')(TitleV2, {isEmpty: TitleV2IsEmptyFn});
-
-
-MapTo('spa-react/components/breadcrumb')(BreadCrumbV2, {isEmpty: BreadCrumbV2IsEmptyFn});
-MapTo('spa-react/components/navigation')(NavigationV1);
-MapTo('spa-react/components/languagenavigation')(LanguageNavigationV1);
-
-
-MapTo('spa-react/components/tabs')(TabsV1, {isEmpty: TabsV1IsEmptyFn});
-MapTo('spa-react/components/accordion')(AccordionV1, {isEmpty: AccordionV1IsEmptyFn});
-MapTo('spa-react/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
-MapTo('spa-react/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
-
+/** Training */
+MapTo('spa-react/components/featurette/v1/featurette')(Featurette, FeaturetteEditConfig);
+MapTo('spa-react/components/marketing-cards-container/v1/marketing-cards-container')(MarketingCardsContainer);
 
 //lazy load of internal component (hello world)
 

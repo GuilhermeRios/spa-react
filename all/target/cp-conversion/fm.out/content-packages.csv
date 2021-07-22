@@ -1,4 +1,4 @@
-# File created on Thu Jul 15 13:11:20 BRT 2021 by the Apache Sling Content Package to Sling Feature converter
+# File created on Wed Jul 21 13:48:22 BRT 2021 by the Apache Sling Content Package to Sling Feature converter
 # content-package path, content-package ID, content-package type, content-package parent ID, path in parent content-package, absolute path
 C:\Users\Guilherme\Documents\workspace\spa-react\all\target\spa-react.all-1.0.0-SNAPSHOT.zip,com.spa.react:spa-react.all:1.0.0-SNAPSHOT,CONTAINER,,,
 C:\Users\Guilherme\Documents\workspace\spa-react\all\target\spa-react.all-1.0.0-SNAPSHOT.zip,com.spa.react:spa-react.ui.config:1.0.0-SNAPSHOT,CONTAINER,com.spa.react:spa-react.all:1.0.0-SNAPSHOT,/jcr_root/apps/spa-react-packages/application/install/spa-react.ui.config-1.0.0-SNAPSHOT.zip,C:\Users\Guilherme\Documents\workspace\spa-react\all\target\spa-react.all-1.0.0-SNAPSHOT.zip!/jcr_root/apps/spa-react-packages/application/install/spa-react.ui.config-1.0.0-SNAPSHOT.zip
