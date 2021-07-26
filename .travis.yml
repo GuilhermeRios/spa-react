@@ -13,7 +13,7 @@ sudo: false
 services: 
   - docker
 
-install: mvn clean install -DskipTests
+install: true
 
 before_script:
   - docker build -t sonarqube-aem -f sonar/Dockerfile .
