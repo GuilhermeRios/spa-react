@@ -1,0 +1,21 @@
+arch: amd64
+
+language: java
+
+jdk:
+  - openjdk11
+
+sudo: false
+
+services: 
+  - docker
+
+before_script:
+  - docker build -t sonarqube-aem -f sonar/Dockerfile .
+
+script:
+  - docker run -p 9000:9000 sonarqube-aem
+  - mvn clean verify sonar:sonar
+
+after_script:
+  - docker ps | grep sonarqube-aem | awk '{print $1}' | xargs docker kill
