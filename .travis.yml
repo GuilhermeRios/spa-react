@@ -5,6 +5,9 @@ language: java
 jdk:
   - openjdk11
 
+env:
+  - CI=false
+
 sudo: false
 
 services: 
