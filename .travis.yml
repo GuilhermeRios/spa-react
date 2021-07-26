@@ -5,8 +5,6 @@ language: java
 jdk:
   - openjdk11
 
-install: false
-
 env:
   - CI=false
 
@@ -14,6 +12,8 @@ sudo: false
 
 services: 
   - docker
+
+install: mvn clean install -DskipTests
 
 before_script:
   - docker build -t sonarqube-aem -f sonar/Dockerfile .
