@@ -17,7 +17,7 @@ before_install:
   - docker build -t sonarqube-aem -f sonar/Dockerfile .
   - docker run -it -d -p 9000:9000 sonarqube-aem
   
-install: mvn clean install -DskipTests
+install: mvn clean install -DskipTests -q
 
 script:
   - docker ps -a
@@ -25,3 +25,7 @@ script:
 
 after_script:
   - docker ps | grep sonarqube-aem | awk '{print $1}' | xargs docker kill
+
+cache:
+  directories:
+    - $HOME/.m2
