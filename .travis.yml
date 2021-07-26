@@ -17,9 +17,10 @@ install: true
 
 before_script:
   - docker build -t sonarqube-aem -f sonar/Dockerfile .
+  - docker run -p 9000:9000 sonarqube-aem
 
 script:
-  - docker run -p 9000:9000 sonarqube-aem
+  - docker ps
   - mvn clean verify sonar:sonar
 
 after_script:
