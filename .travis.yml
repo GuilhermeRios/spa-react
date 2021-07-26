@@ -13,14 +13,14 @@ sudo: false
 services: 
   - docker
 
-install: true
-
-before_script:
+before_install:
   - docker build -t sonarqube-aem -f sonar/Dockerfile .
-  - docker run -p 9000:9000 sonarqube-aem
+  - docker run -it -d -p 9000:9000 sonarqube-aem
+  
+install: mvn clean install -DskipTests
 
 script:
-  - docker ps
+  - docker ps -a
   - mvn clean verify sonar:sonar
 
 after_script:
