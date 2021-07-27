@@ -7,7 +7,7 @@ jdk:
 
 env:
   - CI=false
-  - SONAR_PROJECT_ID=com.spa.react:spa-react
+  - SONAR_PROJECT_ID="com.spa.react:spa-react"
 
 services: 
   - docker
